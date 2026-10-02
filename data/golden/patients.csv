@@ -1,0 +1,5 @@
+patient_id,name,age,severity,arrival_minute,risk,urgency,icu_required,required_bed_type,required_doctor_specialty,required_equipment,length_of_stay_min
+P01,Demo Patient 01,58,5,45,5,5,1,ICU,Cardiologist,Ventilator,60
+P03,Demo Patient 03,47,5,75,4,4,1,ICU,Neurologist,Monitor,90
+P02,Demo Patient 02,62,3,80,2,2,0,GENERAL,Physician,None,30
+P04,Demo Patient 04,34,2,105,2,1,0,GENERAL,Physician,None,20

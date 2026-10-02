@@ -1,0 +1,6 @@
+equipment_id,equipment_type,location
+EQP-VENT-01,Ventilator,ICU Wing
+EQP-ECG-01,ECG,Cardiology Lab
+EQP-MON-01,Monitor,Recovery Ward
+EQP-MRI-01,MRI,Imaging Dept
+EQP-XRAY-01,X-Ray,Radiology

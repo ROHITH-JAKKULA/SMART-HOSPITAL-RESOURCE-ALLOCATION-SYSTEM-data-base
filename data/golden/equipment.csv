@@ -1,0 +1,5 @@
+equipment_id,equipment_type,location
+EQP-VENT-01,Ventilator,Room 101
+EQP-ECG-01,ECG,Room 102
+EQP-MRI-01,MRI,Room 103
+EQP-MON-01,Monitor,Room 104

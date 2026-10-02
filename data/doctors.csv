@@ -1,0 +1,9 @@
+doctor_id,name,specialization
+DOC-CARD-01,Dr. Cardiologist One,Cardiologist
+DOC-CARD-02,Dr. Cardiologist Two,Cardiologist
+DOC-NEUR-01,Dr. Neurologist One,Neurologist
+DOC-PHYS-01,Dr. Physician One,Physician
+DOC-PHYS-02,Dr. Physician Two,Physician
+DOC-PHYS-03,Dr. Physician Three,Physician
+DOC-SURG-01,Dr. Surgeon One,Surgeon
+DOC-SURG-02,Dr. Surgeon Two,Surgeon

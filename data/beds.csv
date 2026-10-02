@@ -1,0 +1,13 @@
+bed_id,bed_type,ward
+BED-ICU-01,ICU,ICU Ward
+BED-ICU-02,ICU,ICU Ward
+BED-ICU-03,ICU,ICU Ward
+BED-EMG-01,EMERGENCY,Emergency Ward
+BED-EMG-02,EMERGENCY,Emergency Ward
+BED-EMG-03,EMERGENCY,Emergency Ward
+BED-GEN-01,GENERAL,General Ward
+BED-GEN-02,GENERAL,General Ward
+BED-GEN-03,GENERAL,General Ward
+BED-GEN-04,GENERAL,General Ward
+BED-GEN-05,GENERAL,General Ward
+BED-GEN-06,GENERAL,General Ward

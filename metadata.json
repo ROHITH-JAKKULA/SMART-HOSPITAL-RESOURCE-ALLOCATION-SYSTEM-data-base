@@ -1,0 +1,6 @@
+{
+  "name": "Smart Hospital Resource Allocation System",
+  "description": "DAA Hackathon System: Hand-written MaxHeap, Greedy All-or-Nothing Allocation, Dynamic Aging, Bottleneck Analysis, and Resource Advisor.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

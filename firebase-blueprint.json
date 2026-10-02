@@ -1,0 +1,62 @@
+{
+  "entities": {
+    "User": {
+      "title": "User",
+      "description": "Authenticated hospital administrator or triage staff member",
+      "type": "object",
+      "properties": {
+        "uid": { "type": "string" },
+        "email": { "type": "string" },
+        "displayName": { "type": "string" },
+        "photoURL": { "type": "string" },
+        "createdAt": { "type": "string", "format": "date-time" }
+      },
+      "required": ["uid", "email"]
+    },
+    "HospitalScenario": {
+      "title": "HospitalScenario",
+      "description": "Persisted hospital allocation scenario containing inventory and patient census",
+      "type": "object",
+      "properties": {
+        "id": { "type": "string" },
+        "userId": { "type": "string" },
+        "name": { "type": "string" },
+        "clock": { "type": "number" },
+        "weights": { "type": "object" },
+        "hospital": { "type": "object" },
+        "patients": { "type": "array" },
+        "createdAt": { "type": "string", "format": "date-time" },
+        "updatedAt": { "type": "string", "format": "date-time" }
+      },
+      "required": ["id", "userId", "name", "clock", "hospital", "patients"]
+    },
+    "AuditLog": {
+      "title": "AuditLog",
+      "description": "Persistent audit log of allocation and triage events",
+      "type": "object",
+      "properties": {
+        "id": { "type": "string" },
+        "userId": { "type": "string" },
+        "clock": { "type": "number" },
+        "kind": { "type": "string" },
+        "details": { "type": "string" },
+        "timestamp": { "type": "string", "format": "date-time" }
+      },
+      "required": ["id", "userId", "clock", "kind", "details"]
+    }
+  },
+  "firestore": {
+    "/users/{userId}": {
+      "schema": { "$ref": "#/entities/User" },
+      "description": "User profile data accessible by the authenticated user"
+    },
+    "/scenarios/{scenarioId}": {
+      "schema": { "$ref": "#/entities/HospitalScenario" },
+      "description": "Hospital resource allocation scenarios saved by users"
+    },
+    "/audit_logs/{logId}": {
+      "schema": { "$ref": "#/entities/AuditLog" },
+      "description": "System event audit trail records"
+    }
+  }
+}
